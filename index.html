@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navbar -->
+    <header class="bg-white p-4 shadow-md flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+          <img src="assets/logo.png" alt="">
+            <span class="text-blue-600 font-bold text-lg">Dev</span>
+            <span class="font-bold text-lg">Board</span>
+        </div>
+        <div class="flex items-center space-x-4">
+            <span class="text-gray-600 text-sm">23</span>
+            <input type="checkbox" class="toggle-checkbox">
+            <div class="w-8 h-8 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"><img src="assets/theme-btn.png" alt=""></div>
+        </div>
+    </header>
+
+    <!-- Main Dashboard -->
+    <div class="p-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-12 gap-4">
+
+            <!-- Sidebar -->
+            <aside class="col-span-3 bg-white p-4 rounded-lg shadow-md">
+                <div class="flex items-center space-x-2">
+                    <input type="checkbox" checked class="w-5 h-5 text-blue-500">
+                    <span class="text-gray-600">Task Assigned</span>
+                    <span class="font-bold text-lg">6</span>
+                </div>
+            </aside>
+
+            <!-- Main Content -->
+            <main class="col-span-6">
+               <div class="bg-gradient-to-r from-blue-500 to-purple-500 p-4 text-white rounded-lg flex justify-between items-center cursor-pointer"
+               id="discover-btn">
+              <div class="flex items-center space-x-2">
+                  <img src="assets/board.png" alt="Task Icon">
+                  <span class="text-lg font-bold">Discover Something New Today!</span>
+              </div>
+              <img src="assets/calender.png" alt="">
+              <span>Tue Feb 25, 2025</span>
+          </div>
+          
+          <script>
+              document.getElementById("discover-btn").addEventListener("click", function() {
+                  window.location.href = "blog.html"; 
+              });
+          </script>
+          
+
+                <!-- Task Cards -->
+                <div class="grid grid-cols-3 gap-4 mt-4">
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <span class="text-gray-500 text-sm">Shop Ease</span>
+                        <h2 class="font-bold text-lg">Fix Mobile Button Issue</h2>
+                        <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet...</p>
+                        <p class="text-sm text-gray-500 mt-2">Deadline: 21 March 2025</p>
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded-md mt-2">Completed</button>
+                    </div>
+
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <span class="text-gray-500 text-sm">Soft Pay</span>
+                        <h2 class="font-bold text-lg">Add Dark Mode</h2>
+                        <p class="text-gray-600 text-sm">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                        <p class="text-sm text-gray-500 mt-2">Deadline: 25 March 2025</p>
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded-md mt-2">Completed</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <span class="text-gray-500 text-sm">Soft Pay</span>
+                        <h2 class="font-bold text-lg">Optimize  Home page </h2>
+                        <p class="text-gray-600 text-sm">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                         and ensure onClick works properly</p>
+                        <p class="text-sm text-gray-500 mt-2">Deadline: 25 March 2025</p>
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded-md mt-2">Completed</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <span class="text-gray-500 text-sm">Meta</span>
+                        <h2 class="font-bold text-lg">Add Pay Success Modal</h2>
+                        <p class="text-gray-600 text-sm">Lorem ipsum dolor sit amet...</p>
+                        <p class="text-sm text-gray-500 mt-2">Deadline: 25 March 2025</p>
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded-md mt-2">Completed</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <span class="text-gray-500 text-sm">Soft Pay</span>
+                        <h2 class="font-bold text-lg">AAdd new emoji 🤲</h2>
+                        <p class="text-gray-600 text-sm">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                         and ensure onClick works properly</p>
+                        <p class="text-sm text-gray-500 mt-2">Deadline: 25 March 2025</p>
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded-md mt-2">Completed</button>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <span class="text-gray-500 text-sm">Google LLC</span>
+                        <h2 class="font-bold text-lg">Integrate OpenAI API </h2>
+                        <p class="text-gray-600 text-sm">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                         and ensure onClick works properly</p>
+                        <p class="text-sm text-gray-500 mt-2">Deadline: 25 March 2025</p>
+                        <button class="bg-purple-600 text-white px-4 py-2 rounded-md mt-2">Completed</button>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Activity Log -->
+            <aside class="col-span-3 bg-white p-4 rounded-lg shadow-md">
+               <div class="flex gap-4">
+                    <img src="assets/activity.png" alt="">
+                <h3 class="font-bold text-gray-700">Activity Log</h3>
+               </div>
+                <button class="bg-purple-600 text-white px-4 py-2 rounded-md mt-2">Clear History</button>
+            </aside>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

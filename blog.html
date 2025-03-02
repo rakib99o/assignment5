@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard - Blogs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <!-- Navbar -->
+    <header class="bg-white p-4 shadow-md flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+          <img src="assets/logo.png" alt="">
+            <span class="text-blue-600 font-bold text-lg">Dev</span>
+            <span class="font-bold text-lg">Board</span>
+        </div>
+        <a href="index.html" class="bg-purple-600 text-white px-4 py-2 rounded-md">Back to Dashboard</a>
+    </header>
+
+    <!-- Blog Content -->
+    <div class="max-w-5xl mx-auto p-6">
+        <h1 class="text-2xl font-bold text-center">Blogs</h1>
+
+        <div class="bg-white p-4 rounded-lg shadow-md mt-4">
+            <h2 class="font-bold">Question-1: What are the different ways to select an element in the DOM?</h2>
+            <p class="text-gray-600">Elements in the DOM can be selected using methods like `getElementById()`, `getElementsByClassName()`, `getElementsByTagName()`, `querySelector()`, and `querySelectorAll()`.</p>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-md mt-4">
+            <h2 class="font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent?</h2>
+            <p class="text-gray-600">`innerHTML` includes HTML tags and content, `innerText` retrieves visible text while considering styling (like hidden elements), and `textContent` retrieves all text, regardless of styling or visibility.</p>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-md mt-4">
+            <h2 class="font-bold">Question-3: What is event delegation in the DOM?</h2>
+            <p class="text-gray-600">Event delegation in the DOM is a technique where a single event listener is attached to a parent element, instead of individual child elements, and it relies on event bubbling to handle events on dynamically added or existing child elements.</p>
+        </div>
+
+        <div class="bg-white p-4 rounded-lg shadow-md mt-4">
+            <h2 class="font-bold">Question-4: What is event bubbling in the DOM?</h2>
+            <p class="text-gray-600">Event bubbling is the process where an event triggered on a child element propagates upward through its parent elements in the DOM until it reaches the root.</p>
+        </div>
+    </div>
+
+</body>
+</html>
